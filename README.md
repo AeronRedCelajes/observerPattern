@@ -33,3 +33,4 @@ The system should be scalable to handle a growing number of subscribers without 
 Ensure that the implementation follows object-oriented design principles and promotes loose coupling between the news agency and subscribers.
 
 ## Class Diagram
+![Observer Design Pattern](https://github.com/AeronRedCelajes/observerPattern/assets/142370807/b3b5d0e8-340c-41e1-9d4a-4b10bc0692c9)

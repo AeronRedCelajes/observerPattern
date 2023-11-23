@@ -18,7 +18,7 @@ public class NewsSubscriptionApp {
             Scanner userInput = new Scanner(System.in);
 
             // Creating the list of news categories for future enhancements, if more news category will be added
-            List<String> newsCategoriesList = Arrays.asList("Natural Disasters", "Technology", "Politics");
+            List<String> newsCategoriesList = new ArrayList<>(Arrays.asList("Natural Disasters", "Technology", "Politics"));
 
             System.out.println("These are the News Categories Given: " + newsCategoriesList);
 
@@ -29,7 +29,7 @@ public class NewsSubscriptionApp {
             List<Subscriber> subscribersList = new ArrayList<>(Arrays.asList(subscriber1, subscriber2, subscriber3));
 
             // Give subscribers with initial preferences (which is Natural Disasters)
-            List<String> preferencesList = List.of("Natural Disasters");
+            List<String> preferencesList = new ArrayList<>(List.of("Natural Disasters"));
             for (Subscriber subscriber : subscribersList) {
                 subscriber.modifyPreferences(preferencesList);
             }
